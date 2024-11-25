@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clé de détermination des diptères Chironomidae - Identification des sous-familles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="container">
+            <div class="navigation-buttons">
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="classification.html">Classification</a>
+                    <a href="bibliographie.html">Bibliographie</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                    <button onclick="searchTaxon()">Rechercher</button>
+                </div>
+            </div>
+            <h1>Clef d’identification des sous-familles et tribus</h1>
+            <div class="question">
+                <h2>Plaques ventromentales non striées</h2>
+                <div class="choices">
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/orthocladiinae1.jpg" alt="Description de l'image 1">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/diamesinae.jpg" alt="Description de l'image 2">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/prodiamesinae.jpg" alt="Description de l'image 3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="choice-content-wrapper">
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="orthocladiinae.html">Plaques ventromentales étroites avec au plus quelques soies</a>
+                        <p>Mentum souvent fortement arqué (4-8 dents latérales). Généralement, prémandibules avec 2-3 dents (mais peut en avoir jusqu’à 6)</p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-mentum" href="diamesinae.html">Segment 3 de l’antenne annelé</a>
+                        <p>(Chez Protanypus, le segment 3 est peu visible, mais la larve est facilement reconnaissable par les nombreuses soies sur la capsule céphalique et les mandibules particulières (3c.)). Sous-famille rare dans les milieux lacustres : plutôt rhéophile mais peut être rencontré dans les lacs d’altitude (eau de fonte de glace)</p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="prodiamesinae.html">Plaques ventromentales avec de nombreuses soies (=barbe) dépassant la capsule céphalique</a>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

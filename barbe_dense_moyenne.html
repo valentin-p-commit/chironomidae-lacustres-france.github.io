@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clé de détermination des diptères Chironomidae - Identification des sous-familles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="container">
+            <div class="navigation-buttons">
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="classification.html">Classification</a>
+                    <a href="bibliographie.html">Bibliographie</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                    <button onclick="searchTaxon()">Rechercher</button>
+                </div>
+            </div>
+            <h1>Sous famille des Orthocladiinae</h1>
+            <div class="question">
+                <h2>Mentum avec une barbe dense ou moyenne</h2>
+                <div class="choices">
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/une_dent_mediane.jpg" alt="Description de l'image 1">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/deux_dents_medianes.jpg" alt="Description de l'image 2">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/parorthocladius_preview.jpg" alt="Description de l'image 3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="choice-content-wrapper">
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="une_dent_mediane.html">Une dent médiane</a>
+                        <p></p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-mentum" href="deux_dents_medianes.html">Deux dents médianes</a>
+                        <p></p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="parorthocladius.html">Trois dents médianes</a>
+                        <p>Barbe proéminente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

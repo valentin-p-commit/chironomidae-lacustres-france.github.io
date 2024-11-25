@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clé de détermination des diptères Chironomidae - Identification des sous-familles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="container">
+            <div class="navigation-buttons">
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="classification.html">Classification</a>
+                    <a href="bibliographie.html">Bibliographie</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                    <button onclick="searchTaxon()">Rechercher</button>
+                </div>
+            </div>
+            <h1>Sous famille des Orthocladiinae</h1>
+            <div class="question">
+                <h2>Dent médiane porte un « mamelon »</h2>
+                <div class="choices">
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/smittia_preview.jpg" alt="Description de l'image 1">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/pseudosmittia_preview.jpg" alt="Description de l'image 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="choice-content-wrapper">
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="smittia.html">Mentum avec 5 dents latérales, SI plumeuses</a>
+                        <p>Antennes moyennes/longues (Segment 1 aussi
+                            long que le segment basal ; segments terminaux réduits (2-3).) Lame (chète) antennaire bien
+                            développée mais pas aussi longue que le flagelle</p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-mentum" href="pseudosmittia.html">Mentum avec 4 dents latérales (Si 5ème paire de dents latérales alors fusionnées à la 4ème). Base du
+                            mentum avec une protubérance.</a>
+                        <p>Antenne très petites (segment basal plus court que le 1er segment).
+                            Lame (chète) antennaire dépassant largement l’apex du flagelle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="scripts.js"></script>
+</body>
+</html>

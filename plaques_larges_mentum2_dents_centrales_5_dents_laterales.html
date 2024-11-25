@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clé de détermination des diptères Chironomidae - Identification des sous-familles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="container">
+            <div class="navigation-buttons">
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="classification.html">Classification</a>
+                    <a href="bibliographie.html">Bibliographie</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                    <button onclick="searchTaxon()">Rechercher</button>
+                </div>
+            </div>
+            <h1>Sous famille des Orthocladiinae</h1>
+            <div class="question">
+                <h2>Plaques larges, deux dents centrales, 5 paires de dents latérales</h2>
+                <div class="choices">
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/parametriocnemus_preview.jpg" alt="Description de l'image 1">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/heterotrissocladius_preview.jpg" alt="Description de l'image 2">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/chaetocladius_preview.jpg" alt="Description de l'image 3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="choice-content-wrapper">
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="parametriocnemus.html">Plaques ventromentales « doubles » et s’étendant bien au-delà de la base du mentum </a>
+                        <p>Prémandibules
+                            avec des dents distinctes (2-6)</p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-mentum" href="heterotrissocladius.html">Antenne à 7 segments (le 7ème très fin, vestigial). La lame antennaire (Chète) est nettement plus
+                            grande que le segment basal. Plaques ventromentales grandes et dépassent largement du
+                            mentum</a>
+                        <p>Plaques ventromentales simples dépassant latéralement du mentum. Prémandibules
+                            indistinctes</p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="chaetocladius.html">Antenne à 5 segments. La lame antennaire (chète) est de même taille que le segment basal. </a>
+                        <p>Plaques
+                            ventromentales ne dépassent pas (ou très peu) du mentum. Prémandibules
+                            indistinctes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
