@@ -68,10 +68,10 @@ function searchTaxon() {
         "tribelos" : "tribelos_intextus.html",
         "tribelos intextus" : "tribelos_intextus.html",
         "stictochironomus" : "stictochironomus.html",
-        "xenochironomus" : "xenochironomus_xenolabis",
-        "xenochironomus xenolabis" : "xenochironomus_xenolabis",
-        "zavreliella marmorata" : "zavreliella_marmorata",
-        "zavreliella" : "zavreliella_marmorata"
+        "xenochironomus" : "xenochironomus_xenolabis.html",
+        "xenochironomus xenolabis" : "xenochironomus_xenolabis.html",
+        "zavreliella marmorata" : "zavreliella_marmorata.html",
+        "zavreliella" : "zavreliella_marmorata.html"
 
 
 
