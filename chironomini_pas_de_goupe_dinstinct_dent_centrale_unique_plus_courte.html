@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribu des Chironomini</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="container">
+            <div class="navigation-buttons">
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="classification.html">Classification</a>
+                    <a href="bibliographie.html">Bibliographie</a>
+                    <a href="about.html">A propos</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                    <button onclick="searchTaxon()">Rechercher</button>
+                </div>
+            </div>
+            <h1>Tribu des Chironomini</h1>
+            <div class="question">
+                <h2>Mentum convexe, plaques ventromentales courbes, dents les plus externes du mentum ne forment pas un groupe distinct, dent centrale unique plus coute que la première paire de dents latérales</h2>
+                <div class="choices">
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/glyptotendipes_preview.jpg" alt="Description de l'image 1">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/xenochironomus_preview.jpg" alt="Description de l'image 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="choice-content-wrapper">
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="glyptotendipes.html">Mandibules avec 3 dents internes. Prémandibules avec 2 dents fines. Plaques ventromentales
+                            souvent très larges et crénelées</a>
+                        <p></p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-mentum" href="xenochironomus_xenolabis.html">Complexe de 3 dents en retrait (Une dent médiane grande et 2 dents latérales plus petites)</a>
+                        <p>Mandibules avec des dents réduites. Prémandibules sans dents définies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="scripts.js"></script>
+</body>
+</html>

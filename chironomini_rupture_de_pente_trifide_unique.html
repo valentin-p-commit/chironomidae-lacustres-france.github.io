@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribu des Chironomini</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="container">
+            <div class="navigation-buttons">
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="classification.html">Classification</a>
+                    <a href="bibliographie.html">Bibliographie</a>
+                    <a href="about.html">A propos</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                    <button onclick="searchTaxon()">Rechercher</button>
+                </div>
+            </div>
+            <h1>Tribu des Chironomini</h1>
+            <div class="question">
+                <h2>Mentum convexe, plaques ventromentales courbes, dents les plus externes du mentum forment un groupe distinct</h2>
+                <div class="choices">
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/einfeldia_fleuria_preview.jpg" alt="Description de l'image 1">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/cryptotendipes_preview.jpg" alt="Description de l'image 2">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/microchironomus_preview.jpg" alt="Description de l'image 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="choice-content-wrapper">
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="einfeldia_fleuria.html">Dent médiane unique (ou légèrement crantée sur les côtés). Plaques ventromentales jamais
+                            crénelées.</a>
+                        <p>Capsule céphalique souvent sombre</p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-mentum" href="cryptotendipes.html">Mentum avec dent médiane largement arrondie (ou partiellement trifide). Les dents latérales sont
+                            affaissées vers la dent centrale donnant au mentum un aspect pentu.</a>
+                        <p>Antenne : Organe
+                            annulaire dans la partie proximale du segment basal.</p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-mentum" href="microchironomus.html">Dent médiane distinctement trifide. Les dents latérales sont faiblement affaissées donnant au
+                            mentum une pente plus douce</a>
+                        <p>Antenne : Organe annulaire sur à la base du segment basa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="scripts.js"></script>
+</body>
+</html>
