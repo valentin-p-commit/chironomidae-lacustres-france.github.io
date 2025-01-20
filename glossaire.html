@@ -3,24 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glossaire des diptères Chironomidae</title>
+    <title>Glossaire</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<div class="background-container">
+    <img src="images/background.jpg" alt="Background Image" class="background-image">
     <div class="container">
-        <h1>Glossaire des diptères Chironomidae</h1>
-        <div class="content">
-            <p>Ce glossaire fournit des définitions et des explications pour les termes techniques utilisés sur ce site.</p>
-            <dl>
-                <dt>Term 1</dt>
-                <dd>Définition du terme 1.</dd>
-                <dt>Term 2</dt>
-                <dd>Définition du terme 2.</dd>
-                <dt>Term 3</dt>
-                <dd>Définition du terme 3.</dd>
-                <!-- Ajoutez plus de termes et de définitions ici -->
-            </dl>
+        <div class="navigation-buttons">
+            <div>
+                <a href="index.html">Accueil</a>
+                <a href="cle.html">Clé de détermination</a>
+                <a href="classification.html">Classification</a>
+                <a href="bibliographie.html">Bibliographie</a>
+                <a href="about.html">A propos</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                <button onclick="searchTaxon()">Rechercher</button>
+            </div>
         </div>
+        <main>
+            <section>
+                <h2>Termes et Définitions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Terme</th>
+                            <th>Définition</th>
+                            <th>Illustration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Antenne</b></td>
+                            <td>n.f. Organe sensoriel pair inséré
+                                dorsalement sur la capsule céphalique et constitué
+                                d’une succession d’articles. Généralement très
+                                mobiles, les antennes sont composées d’un article
+                                basal, d’une lame antennaire et d’un flagelle
+                                constitué d’un certain nombre d’articles parfois
+                                fusionnés.</td>
+                            <td><img src="images/illustration_antenne.jpg" alt="Illustration de l'antenne" width="300"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Apex</b></td>
+                            <td>n. m.. Extrémité.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Apical</b></td>
+                            <td>adj. Situé à l'apex.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Apotome frontal</b></td>
+                            <td>n.m. Plaque allongée
+                                au centre du dos formée par de sutures qui, dans la
+                                plupart des taxons se diviseront et laisseront
+                                émerger la pupe. Si le clypeus est fusionné à
+                                l'apotome, il est appelé l'apotome fronto-clypeal.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Appendice M</b></td>
+                            <td>n.m. Chez les Tanypodinae.
+                                Plaque triangulaire non chitinisée souvent
+                                ornementée d’une bande médiane rugueuse (=la
+                                pseudoradula). Située dorsalement par rapport à la
+                                ligula.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Chaetules latérales</b></td>
+                            <td>n.f. Lames
+                                simples ou pectinées localisées sur chaque côté du
+                                peigne de l’épipharynx.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Clypeus</b></td>
+                            <td>n. m. Sclérite céphalique dorsale,
+                            antérieure à l'apotome frontal, portant la soie SIII.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Distal</b></td>
+                            <td>adj. Partie la plus éloignée de la racine
+                                du membre /organe.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Epipharynx</b></td>
+                            <td>n.m. Face interne membraneuse
+                                du labre sur laquelle sont présentes des soies, des
+                                lamelles ou des épines. Il a un rôle sensitif et
+                                nutritionnel.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Flagelle</b></td>
+                            <td>n.m. Partie distale pluriarticulée
+                                des antennes.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Flagelle</b></td>
+                            <td>n.m. Partie distale pluriarticulée
+                                des antennes.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Hypopharynx</b></td>
+                            <td>n. m. Organe linguiforme
+                                formant la bordure inférieure du pharynx sur le
+                                plancher de la cavité buccale et portant l’ouverture
+                                du conduit salivaire commun. L’hypopharynx peut
+                                devenir un organe perforant (Culicidés).</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Labium</b></td>
+                            <td>n. m. Organe complexe formant le
+                                plancher de la bouche chez les insectes
+                                mandibulés, derrière les maxilles et en opposition
+                                avec le labre. Lèvre inférieure de la bouche. Le
+                                labium est constitué de plusieurs éléments :
+                                Submentum, Postmentum, Prémentum, Glosse,
+                                Paraglosse et Palpe labial.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Labre</b></td>
+                            <td>n. m. Lèvre supérieure impaire de la
+                                bouche des insectes, il couvre la base des
+                                mandibules et forme la voûte de la cavité buccale
+                                des insectes.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Lancéolé</b></td>
+                            <td>adj. En forme de fer de lance.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Latéro-dorsal/ventral</b></td>
+                            <td>dj. situé de
+                                chaque côté (latéralement) de la face
+                                dorsale/ventrale.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Lauterborn (organe)</b></td>
+                            <td>n.m. Appendice
+                                sensitif présent sur l’apex du 2ème segment
+                                antennaire (parfois sur d’autres). Peuvent être
+                                sessiles ou pédonculés.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Ligula</b></td>
+                            <td>n.f. Présente seulement chez les
+                                Tanypodinae, c’est une pièce buccale
+                                distinctement développée et sclérifiée, en forme de
+                                « fourchette ». La ligula correspond à la fusion de
+                                la partie antérieure du labium (prémentum ou
+                                dorsomentum) avec les glosses. Latéralement elle
+                                porte deux paraligulas dentées. La ligula et les
+                                mandibules agissent comme des pinces pour saisir
+                                la proie et l’engloutir dans le pharynx.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Maxille</b></td>
+                            <td>n.f. Pièce buccale, présente par paire,
+                                située dans le plan dorso-ventral et localisée juste
+                                après les mandibules. Elles permettent de
+                                maintenir et de triturer les particules alimentaires.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Mandibule</b></td>
+                            <td> n. f. Pièce buccale, présente par
+                                paire, la plus dorsale des pièces mobiles de
+                                l’appareil buccal. Elles sont, dans de nombreux
+                                ordres, dures et cornées et reliées à des muscles
+                                puissants. Placées devant la bouche, elles
+                                permettent à l’insecte de saisir et de broyer. Les
+                                mandibules présentent une dent apicale et un
+                                nombre variable de dents internes (souvent 2-3),
+                                parfois une ou plusieurs dents dorsales. Trois soies
+                                ou groupes de soies peuvent être identifiés : le
+                                peigne mandibulaire : qui a la forme de peigne
+                                situé sur la surface subapicale, la soie subdentale
+                                sur le mola interne et la soie interne, basale, en
+                                forme de branche, souvent localisée sur la surface
+                                mandibulaire interne. Les mandibules peuvent être
+                                falciformes chez les Tanypodinae ou plus larges
+                                chez les autres sous familles.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Mentum</b></td>
+                            <td>n. m. Le mentum est une pièce
+                                sclérifiée médioventrale de la capsule céphalique
+                                correspondant à la partie postérieure du labium
+                                (lèvre inférieure), nommé aussi post-mentum ou
+                                ventromentum. Il comporte presque toujours des
+                                dents. Latéralement il peut s’étendre en plaques
+                                ventromentales striées ou non. Chez les
+                                Tanypodinae, le ventromentum est transparent,
+                                parfois orné médialement de rugosités constituant
+                                une pseudoradula. Chez les Tanypodinae c’est la
+                                partie antérieure du labium (prémentum ou
+                                dorsomentum) qui est sclérifiée et dentée et qui
+                                prend alors le nom de Ligula (voir sa définition).</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Mola</b></td>
+                            <td>n. f. Partie basale du bord concave de la
+                                mandibule, épaissie, saillante ou mamelonnée.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Palpes</b></td>
+                            <td>n.m. Petits appendices des pièces
+                                buccales, portant souvent les organes sensoriels du
+                                toucher, du goût et de l'odorat. (Palpes maxillaires,
+                                labiaux…).</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Parapode antérieur</b></td>
+                            <td>n.m. Appendice
+                                locomoteur charnu, non segmenté (« fausses pattes
+                                ») qui porte des griffes et localisé ventro-
+                                latéralement sur le premier segment thoracique.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Pièces buccales</b></td>
+                            <td>n. f. Les pièces buccales
+                                ou « trophi » comprennent le labre, les
+                                mandibules, les maxilles, le labium,
+                                l'hypopharynx.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Pectiné</b></td>
+                            <td>adj. En forme de peigne.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Pédicelle</b></td>
+                            <td>n. m. Petit pédoncule.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Postéro-</b></td>
+                            <td>adj. Situé à la partie postérieure
+                                (arrière). (Antonyme :Antero-)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Pseudopode</b></td>
+                            <td>n. m. Appendice non articulé en
+                                forme de patte. (Synonymes : pattes abdominales,
+                                parapodes, fausses pattes)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Prémandibules</b></td>
+                            <td>n.f. Localisées au niveau
+                                de la surface ventrale du labre (épipharynx), les
+                                prémandibules sont des appendices pairs, mobiles
+                                portant une ou plusieurs dents apicales. Elles sont
+                                munies ou non d’une touffe de soies appelée la
+                                brosse prémandibulaire. Les prémandibules
+                                peuvent être réduites, vestigiales ou manquantes
+                                (Tanypodinae, Podonominae).</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Procercus</b></td>
+                            <td>n.m. Protubérance, présente par
+                                paire dorsalement sur le dernier segment
+                                abdominal et portant un nombre variable de soies.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Proximal</b></td>
+                            <td>adj. Partie qui est le plus près du
+                                corps, du centre d'un organe, de l'origine d'une
+                                structure ou du point d'attache d'un membre au
+                                tronc.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Rhéophile</b></td>
+                            <td>adj. Organisme inféodé aux
+                                zones de courant.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Segment basal</b></td>
+                            <td>n.m. Segment à la base de
+                                l’antenne. Sur la paroi du segment basal il peut y
+                                avoir un organe sensoriel circulaire : l’organe
+                                annulaire.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Socle antennaire</b></td>
+                            <td>n.m. Extension de la
+                                face dorsale de la capsule céphalique formant une
+                                protubérance sur laquelle s’insère l’antenne chez
+                                certains groupes de Chironomidae (Tanytarsini).</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Soie labrale</b></td>
+                            <td>n.f. Organite sensoriel situé
+                                antérieurement sur le labre, au nombre de quatre
+                                paires numérotées de I à IV médio-latéralement.
+                                Elles peuvent être simples, bifides, palmées,
+                                plumeuses, frangées ou pectinées.</td>
+                            <td><img src="images/illustration_labre.jpg" alt="Illustration du labre" width="300"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Tubule anal</b></td>
+                            <td>n.m. Papilles anales
+                                constituées par de simples évaginations
+                                tégumentaires autour de l'anus. Dispositif
+                                branchial (branchies « sanguines ») localisé sur le
+                                9ème segment abdominal. Souvent 1 ou 2 paires
+                                (exceptionnellement 3). Ce complexe peut être
+                                complété, chez certaines larves, par une paire de
+                                papilles courtes insérées au niveau du 7e segment
+                                abdominal et/ou par 1 ou 2 paires assez longues sur
+                                le 8e segment abdominal.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b>Vestigial</b></td>
+                            <td>adj. Ce dont il ne reste que des
+                                traces, réduit ou rudimentaire, peu ou pas
+                                développé. Un organe vestigial qualifie
+                                fréquemment un organe peu développé souvent
+                                non fonctionnel qui n'est qu'un vestige</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><b></b></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
     </div>
+</div>   
+<script src="scripts.js"></script>
 </body>
 </html>

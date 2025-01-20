@@ -231,3 +231,14 @@ h1 {
     color: #555;
     line-height: 1.6;
 }
+.homepage-characteristics .characteristic {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+.homepage-characteristics .characteristic img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Garde les proportions de l'image */
+}
