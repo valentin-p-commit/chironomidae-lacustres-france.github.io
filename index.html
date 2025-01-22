@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Clé de détermination des diptères Chironomidae</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .characteristic {
+            width: 200px;
+            height: 200px;
+            background-color: #007BFF; /* Bleu */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .characteristic a {
+            color: white;
+            text-decoration: none;
+        }
+        .characteristics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <div class="background-container">
@@ -12,36 +38,72 @@
         <div class="container">
             <h1>Clé de détermination des diptères Chironomidae</h1>
             <div class="content">
-                <p>Bienvenue sur notre site dédié à la détermination des Chironomidae lacustres de France métropolitaine. Ce site est adapté de la clé de détermination <I > Guide d’identification des larves de
+                <p>Bienvenue sur notre site dédié à la détermination des Chironomidae lacustres de France métropolitaine. Ce site est adapté de la clé de détermination <i>Guide d’identification des larves de
                     Chironomidae (Diptères, Insecta) des
-                    hydrosystèmes lacustres de France - Nicolas Dedieu1 & Valérie Verneaux; 2019</I>. Ce site vous aidera à identifier les différents genres à l'aide d'une clé de détermination interactive. Vous y trouverez également des informations sur la classification des diptères, une bibliographie pour approfondir vos connaissances, et un glossaire des termes techniques.</p>
+                    hydrosystèmes lacustres de France - Nicolas Dedieu1 & Valérie Verneaux; 2019</i>. Ce site vous aidera à identifier les différents genres à l'aide d'une clé de détermination interactive. Vous y trouverez également des informations sur la classification des diptères, une bibliographie pour approfondir vos connaissances, et un glossaire des termes techniques.</p>
                     <div class="characteristics homepage-characteristics">
                         <div class="characteristic">
-                            <a href="cle.html">
-                                <img src="images/cle_de_determination.jpg" alt="Clé de détermination">
-                            </a>
+                            <a href="cle.html">Clé de détermination</a>
                         </div>
                         <div class="characteristic">
-                            <a href="glossaire.html">
-                                <img src="images/glossaire.jpg" alt="Glossaire">
-                            </a>
+                            <a href="glossaire.html">Glossaire</a>
                         </div>
                         <div class="characteristic">
-                            <a href="classification.html">
-                                <img src="images/classification.jpg" alt="Classification">
-                            </a>
+                            <a href="classification.html">Classification</a>
                         </div>
                         <div class="characteristic">
-                            <a href="bibliographie.html">
-                                <img src="images/bibliographie.jpg" alt="Classification">
-                            </a>
+                            <a href="bibliographie.html">Bibliographie</a>
                         </div>
                         <div class="characteristic">
-                            <a href="about.html">
-                                <img src="images/a_propos.jpg" alt="À propos">
-                            </a>
+                            <a href="about.html">À propos</a>
                         </div>
                     </div>
+                    <div id="github-commits" class="github-section">
+                        <h2>Dernieres mises à jour de la clé</h2>
+                        <p>Chargement des derniers commits...</p>
+                    </div>
+                    
+                    <script>
+                        async function fetchGitHubCommits() {
+                            const apiURL = 'https://api.github.com/repos/chironomidae-lacustres-france/chironomidae-lacustres-france.github.io/commits';
+                            try {
+                                const response = await fetch(apiURL);
+                                if (!response.ok) {
+                                    throw new Error('Erreur lors du chargement des commits GitHub.');
+                                }
+                                const data = await response.json();
+                                const commitsSection = document.getElementById('github-commits');
+                                let commitsHTML = `
+                                    <h2>Dernieres mises à jour de la clé</h2>
+                                    <ul>
+                                `;
+                                // Limiter l'affichage à 10 commits
+                                data.slice(0, 10).forEach(commit => {
+                                    const message = commit.commit.message.split('\n')[0]; // Titre (première ligne)
+                                    const description = commit.commit.message.split('\n').slice(1).join('<br>'); // Description (les lignes suivantes)
+                                    const date = new Date(commit.commit.author.date).toLocaleDateString();
+                                    commitsHTML += `
+                                        <li>
+                                            <strong>${message}</strong> - <em>${date}</em><br>
+                                            ${description ? `<p>${description}</p>` : ''}
+                                            <a href="${commit.html_url}" target="_blank">Voir la mise à jour</a>
+                                        </li>
+                                    `;
+                                });
+                                commitsHTML += '</ul>';
+                                commitsSection.innerHTML = commitsHTML;
+                            } catch (error) {
+                                console.error(error);
+                                document.getElementById('github-commits').innerHTML = `
+                                    <p>Impossible de charger les commits GitHub.</p>
+                                `;
+                            }
+                        }
+                    
+                        // Appelle la fonction pour récupérer les commits GitHub
+                        fetchGitHubCommits();
+                    </script>
+                    
             </div>
         </div>
     </div>

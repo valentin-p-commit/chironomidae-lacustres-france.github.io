@@ -3,16 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibliographie des diptères Chironomidae</title>
+    <title>Bibliographie</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<div class="background-container">
+    <img src="images/background.jpg" alt="Background Image" class="background-image">
     <div class="container">
-        <h1>Bibliographie des diptères Chironomidae</h1>
-        <div class="content">
-            <p>Voici une liste de références et de ressources pour en savoir plus sur les diptères Chironomidae...</p>
-            <!-- Ajoutez des références et des ressources ici -->
+        <div class="navigation-buttons">
+            <div>
+                <a href="index.html">Accueil</a>
+                <a href="cle.html">Clé de détermination</a>
+                <a href="classification.html">Classification</a>
+                <a href="glossaire.html">Glossaire</a>
+                <a href="about.html">A propos</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                <button onclick="searchTaxon()">Rechercher</button>
+            </div>
         </div>
+        <main>
+            <section>
+                <h1>Bibliographie</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Référence</th>
+                            <th>Illustration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h2>Andersen, T., Cranston, P. S., & Epler, J. H. (2013). <i>Chironomidae of the Holarctic Region : Keys and diagnoses. Part 1—Larvae </i>(Scandinavian Entomology).</h2></td>
+                            <td><img src="images/andersen_2013.jpg" alt="andersen" width="200"></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Cranston, P. <i>Chirokey.skullisland.info</i> https://keys.lucidcentral.org/keys/v3/Chironomidae/index.html</h2></td>
+                            <td><img src="images/cranston_chirokey.jpg" alt="andersen" width="200"></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Dedieu, N., & Verneaux, V. (2019, avril). <i>Guide d’identification des larves de Chironomidae (Diptères, Insecta) des hydrosystèmes lacustres de France.</i></h2></td>
+                            <td><img src="images/dedieu_verneaux_2019.jpg" alt="andersen" width="200"></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Epler, J. H. (2001). <i>IDENTIFICATION MANUAL FOR THE LARVAL CHIRONOMIDAE (DIPTERA) OF NORTH AND SOUTH CAROLINA.</h2></i></td>
+                            <td><img src="images/epler2001.jpg" alt="andersen" width="200"></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Orendt, C., & Bendt, T. (2021).  <i>Orthocladiinae sensu lato (Diptera : Chironomidae): Orthocladiinae, Prodiamesinae, Diamesinae, Buchonomyiinae, Telmatogetoninae, Podonominae: keys to Central European larvae with respect to macroscopic characters. </i>Eigenverlag der DGL.</h2></td>
+                            <td><img src="images/orendt_bendt_2021.jpg" alt="andersen" width="200"></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Orendt, C., & Spies, M. (avec Deutsche Gesellschaft für Limnologie). (2012).  <i>Chironomini (Diptera : Chironomidae: Chironominae): Keys to Central European larvae using mainly macroscopic characters (2nd, revised edition).</i></h2></td>
+                            <td><img src="images/orendt_spies_2012.jpg" alt="andersen" width="200"></td>
+                        </tr>
+                        <tr>
+                            <td><h2>Vallenduuk, H. J. (2017). <i>Chironomini larvae of western European lowlands (Diptera : Chironomidae) Keys with notes on the species.</i> Lauterbornia, 82, 1‑216.</h2></td>
+                            <td><img src="images/vallenduuk_2017.jpg" alt="andersen" width="200"></td>
+                        </tr>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
     </div>
+</div>   
+<script src="scripts.js"></script>
 </body>
 </html>

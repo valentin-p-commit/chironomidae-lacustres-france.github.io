@@ -231,6 +231,8 @@ h1 {
     color: #555;
     line-height: 1.6;
 }
+
+/* mise en page des boutons de la page d'acceuil index.html */
 .homepage-characteristics .characteristic {
     display: flex;
     justify-content: center; /* Centre horizontalement */
@@ -241,4 +243,87 @@ h1 {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain; /* Garde les proportions de l'image */
+}
+
+
+/*stylisation de l'insert github*/
+
+.github-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.github-section li {
+    margin: 15px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.github-section li strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.github-section li em {
+    color: #555;
+    font-size: 14px;
+}
+
+.github-section li p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.github-section li a {
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #0366d6;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.github-section li a:hover {
+    color: #024f9a;
+}
+
+/*mise en page de la page classification.html*/
+
+.subfamily {
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement à l'intérieur */
+    align-items: flex-start; /* Aligne le contenu sur la gauche */
+    padding: 15px;
+    background-color: #f9f9f9; /* Couleur de fond distincte pour les blocs */
+    border: 1px solid #ddd; /* Ajoute une bordure pour mieux distinguer les blocs */
+    border-radius: 5px;
+    width: calc(33.333% - 20px); /* Occupe environ un tiers de la largeur du conteneur, en tenant compte de l'espace */
+    box-sizing: border-box;
+}
+
+.subfamily h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.subfamily ul {
+    list-style: none; /* Supprime les puces */
+    margin: 0;
+    padding: 0;
+}
+
+.subfamily ul li {
+    margin-bottom: 8px; /* Ajoute de l'espace entre les éléments */
+}
+
+.subfamily ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.subfamily ul li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
 }
