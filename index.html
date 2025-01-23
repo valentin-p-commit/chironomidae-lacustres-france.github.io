@@ -40,7 +40,7 @@
             <div class="content">
                 <p>Bienvenue sur notre site dédié à la détermination des Chironomidae lacustres de France métropolitaine. Ce site est adapté de la clé de détermination <i>Guide d’identification des larves de
                     Chironomidae (Diptères, Insecta) des
-                    hydrosystèmes lacustres de France - Nicolas Dedieu1 & Valérie Verneaux; 2019</i>. Ce site vous aidera à identifier les différents genres à l'aide d'une clé de détermination interactive. Vous y trouverez également des informations sur la classification des diptères, une bibliographie pour approfondir vos connaissances, et un glossaire des termes techniques.</p>
+                    hydrosystèmes lacustres de France - Nicolas Dedieu & Valérie Verneaux; 2019</i>. Ce site vous aidera à identifier les différents genres à l'aide d'une clé de détermination interactive. Vous y trouverez également des informations sur la classification des diptères, une bibliographie pour approfondir vos connaissances, et un glossaire des termes techniques.</p>
                     <div class="characteristics homepage-characteristics">
                         <div class="characteristic">
                             <a href="cle.html">Clé de détermination</a>
@@ -58,10 +58,13 @@
                             <a href="about.html">À propos</a>
                         </div>
                     </div>
-                    <div id="github-commits" class="github-section">
-                        <h2>Dernieres mises à jour de la clé</h2>
-                        <p>Chargement des derniers commits...</p>
-                    </div>
+                    <div class="choice-content-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HEaRdeoBGdo?si=9-5x0IO3qDRw2kzL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>    
+                        <div id="github-commits" class="github-section">
+                            <h2>Dernieres mises à jour de la clé</h2>
+                            <p>Chargement des derniers commits...</p>
+                        </div>
                     
                     <script>
                         async function fetchGitHubCommits() {
@@ -77,8 +80,8 @@
                                     <h2>Dernieres mises à jour de la clé</h2>
                                     <ul>
                                 `;
-                                // Limiter l'affichage à 10 commits
-                                data.slice(0, 10).forEach(commit => {
+                                // Limiter l'affichage à 5 commits
+                                data.slice(0, 5).forEach(commit => {
                                     const message = commit.commit.message.split('\n')[0]; // Titre (première ligne)
                                     const description = commit.commit.message.split('\n').slice(1).join('<br>'); // Description (les lignes suivantes)
                                     const date = new Date(commit.commit.author.date).toLocaleDateString();
