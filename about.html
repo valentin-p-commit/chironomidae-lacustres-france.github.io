@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="container">
+            <div class="navigation-buttons">
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="cle.html">Clé de détermination</a>
+                    <a href="classification.html">Classification</a>
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="bibliographie.html">Bibliographie</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                    <button onclick="searchTaxon()">Rechercher</button>
+                </div>
+            </div>
+            <div class="about-content">
+                <h1>A propos</h1>
+                <p>
+                    Ce site web propose une clé et des ressources de détermination des Chironomidae. 
+                    Elles sont principalement adaptées à partir des travaux suivants :
+                </p>
+                <ul>
+                    <li>La clé de <strong>Dedieu et Verneaux (2019)</strong>.</li>
+                     <figure>
+                        <img src="images/dedieu_verneaux_2019.jpg" alt="Dedieu et Verneaux (2019)">
+                        <figcaption>Clé de Dedieu et Verneaux (2019)</figcaption>
+                    </figure>
+                    <li>Les images et schémas réalisés par <strong>Peter Cranston</strong>.</li>
+                    <figure>
+                        <img src="images/cranston_chirokey.jpg" alt="Schéma de Peter Cranston">
+                        <figcaption>Schéma de Peter Cranston</figcaption>
+                    </figure>
+                <p>
+                    Toutes les autres images présentes sur ce site, qui ne sont pas référencées avec la mention 
+                    <em>Copyright suivi du nom du créateur</em>, sont mes propres créations. 
+                    Vous pouvez les réutiliser sous la licence <strong>CC BY-NC 4.0</strong> 
+                    (<em>Attribution - Utilisation non commerciale</em>).
+                </p>
+                <p>
+                    Cette clé et les ressources associées sont exclusivement destinées à un usage non lucratif. 
+                </p>
+                <h2>Contact</h2>
+                <p>
+                    Si vous remarquez une erreur ou souhaitez proposer des suggestions, n'hésitez pas à me contacter 
+                    à l'adresse suivante : 
+                    <a href="mailto:valentin.picard@aquabio-conseil.com">valentin.picard@aquabio-conseil.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
