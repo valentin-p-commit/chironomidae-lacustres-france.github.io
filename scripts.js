@@ -97,7 +97,22 @@ function searchTaxon() {
         "arctopelopia" : "arctopelopia.html",
         "trissopelopia" : "trissopelopia.html",
         "xenopelopia" : "xenopelopia.html",
-        "zavrelimyia" : "zavrelimyia.html"
+        "zavrelimyia" : "zavrelimyia.html",
+        "cladotanytarsus" : "cladotanytarsus.html",
+        "constempellina" : "constempellina.html",
+        "micropsectra" : "micropsectra.html",
+        "micropsectra bidentata" : "micropsectra_bidentata.html",
+        "neostempellina" : "neostempellina.html",
+        "neozavrelia" : "neozavrelia.html",
+        "paratanytarsus" : "paratanytarsus.html",
+        "paratanytarsus austriacus" : "paratanytarsus_austriacus.html",
+        "stempellina" : "stempellina.html",
+        "stempellinella": "stempellinella.html",
+        "tanytarsus" : "tanytarsus.html",
+        "virgatanytarsus" : "virgatanytarsus.html",
+        "zavrelia" : "zavrelia.html"
+        
+
 
 
 
