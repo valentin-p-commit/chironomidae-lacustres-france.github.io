@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribu des Tanytarsini</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="container">
+            <div class="navigation-buttons">
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="classification.html">Classification</a>
+                    <a href="bibliographie.html">Bibliographie</a>
+                    <a href="about.html">A propos</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                    <button onclick="searchTaxon()">Rechercher</button>
+                </div>
+            </div>
+            <h1>Tribu des Tanytarsini</h1>
+            <div class="question">
+                <h2>Plaques ventromentales rapprochées, dent centrale simple ou trifide, 5 paires de dents latérales de même taille, prémandibules avec 3 dents ou plus.</h2>
+                <div class="choices">
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/tanytarsus_preview.jpg" alt="Description de l'image 1">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/virgatanytarsus_preview.jpg" alt="Description de l'image 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="choice-content-wrapper">
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="tanytarsus.html">Prémandibules 3-5 dents, Griffes des parapodes postérieurs peu nombreuses, simples ou légèrement crantées
+                            intérieurement</a>
+                        <p></p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-mentum" href="virgatanytarsus.html">Parapodes postérieurs présentant entre les griffes des groupes de
+                            crochets très caractéristiques </a>
+                        <p></p>
+                    </div>
+                </div>
+                <p>Attention à la confusion avec <a href="micropsectra.html"><i>Micropsectra</i></a>, qui a des prémandibules bifides. Si celles-ci ne sont pas bien visibles, les griffes des parapodes postérieurs peuvent être utilisée: elles sont environ une centaine chez <a href="micropsectra.html"><i>Micropsectra</i></a>, tandis qu'elles sont jusqu'à 30 chez <a href="tanytarsus.html"><i>Tanytarsus</i></a> .</p>
+            </div>
+        </div>
+    </div>   
+    <script src="scripts.js"></script>
+</body>
+</html>
