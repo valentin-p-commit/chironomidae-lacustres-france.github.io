@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribu des Tanytarsini</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="container">
+            <div class="navigation-buttons">
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="classification.html">Classification</a>
+                    <a href="bibliographie.html">Bibliographie</a>
+                    <a href="about.html">A propos</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                    <button onclick="searchTaxon()">Rechercher</button>
+                </div>
+            </div>
+            <h1>Tribu des Tanytarsini</h1>
+            <div class="question">
+                <h2>Plaques ventromentales rapprochées, dent centrale simple ou trifide, 5 paires de dents latérales de même taille</h2>
+                <div class="choices">
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/tanytarsini_plaques_rapprochees_premandibules_3_dents_ou_plus.jpg" alt="Description de l'image 1">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/tanytarsini_plaques_rapprochees_premandibules_bifides.jpg" alt="Description de l'image 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="choice-content-wrapper">
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="tanytarsini_plaques_rapprochees_premandibules_3_dents_ou_plus.html">Prémandibules avec 3 dents ou plus</a>
+                        <p></p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-mentum" href="tanytarsini_plaques_rapprochees_premandibules_bifides.html">Prémandibules bifides</a>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="scripts.js"></script>
+</body>
+</html>
