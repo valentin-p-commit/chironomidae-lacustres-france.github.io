@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribu des Tanytarsini</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="container">
+            <div class="navigation-buttons">
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="classification.html">Classification</a>
+                    <a href="bibliographie.html">Bibliographie</a>
+                    <a href="about.html">A propos</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                    <button onclick="searchTaxon()">Rechercher</button>
+                </div>
+            </div>
+            <h1>Tribu des Tanytarsini</h1>
+            <div class="question">
+                <h2>Plaques ventromentales rapprochées, prémandibules bifides, trois dents internes à la mandibule, pas d'épine ou une petite épine au socle antennaire</h2>
+                <div class="choices">
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/paratanytarsus_austriacus_preview.jpg" alt="Description de l'image 1">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/micropsectra_preview.jpg" alt="Description de l'image 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="choice-content-wrapper">
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="paratanytarsus_austriacus.html">Organes de lauterborns petits et opposés à l'apex du deuxieme segment antennaire. Socle antennaire court (plus large que long)</a>
+                        <p>Soies abdominales bifides (difficilement visibles , de
+                            petites tailles).</p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-mentum" href="micropsectra.html"> Organes de Lauterborns situés sur de long pédicelles. Socle antennaire plus haut que large avec une épine courte et pointue.</a>
+                        <p>Dent médiane trifide (ou
+                            cranté sur le côté)</p>
+                    </div>
+                </div>
+            </div>
+            <p>Attention à la confusion entre <a href="micropsectra.html"><i>Micropsectra</i></a>, qui a des prémandibules bifides, et <a href="tanytarsus.html"><i>Tanytarsus</i></a> qui à les prémandibules avec 3 dents ou plus. Si celles-ci ne sont pas bien visibles, les griffes des parapodes postérieurs peuvent être utilisée: elles sont environ une centaine chez <a href="micropsectra.html"><i>Micropsectra</i></a>, tandis qu'elles sont jusqu'à 30 chez <a href="tanytarsus.html"><i>Tanytarsus</i></a> .</p>
+        </div>
+    </div>   
+    <script src="scripts.js"></script>
+</body>
+</html>
