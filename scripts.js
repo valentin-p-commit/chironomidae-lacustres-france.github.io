@@ -110,10 +110,18 @@ function searchTaxon() {
         "stempellinella": "stempellinella.html",
         "tanytarsus" : "tanytarsus.html",
         "virgatanytarsus" : "virgatanytarsus.html",
-        "zavrelia" : "zavrelia.html"
-        
-
-
+        "zavrelia" : "zavrelia.html",
+        "boreoheptagyia" : "boreoheptagyia.html",
+        "diamesa" : "diamesa.html",
+        "pseudochironomus" : "pseudochironomus_prasinatus.html",
+        "potthastia" : "potthastia_gr_longimana.html",
+        "potthastia longimana" : "potthastia_gr_longimana.html",
+        "potthastia gaedii" : "potthastia_gr_gaedii.html",
+        "protanypus" : "protanypus.html",
+        "pseudodiamesa" : "pseudodiamesa.html",
+        "pseudokiefferiella" : "pseudokiefferiella.html",
+        "syndiamesa" : "syndiamesa.html",
+        "sympotthastia" : "sympotthastia.html"
 
 
         // Ajoutez ici tous les taxons avec leur fichier HTML correspondant (attentention ici mettre le nom du taxon en minuscule)
