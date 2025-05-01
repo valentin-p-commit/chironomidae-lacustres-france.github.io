@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clé des espèces de Nanocladius</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <img src="images/background.jpg" alt="Background Image" class="background-image">
+        <div class="container">
+            <div class="navigation-buttons">
+                <div>
+                    <a href="index.html">Accueil</a>
+                    <a href="glossaire.html">Glossaire</a>
+                    <a href="classification.html">Classification</a>
+                    <a href="bibliographie.html">Bibliographie</a>
+                    <a href="about.html">A propos</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un taxon">
+                    <button onclick="searchTaxon()">Rechercher</button>
+                </div>
+            </div>
+            <h1>S.F. Orthocladiinae, genre Nanocladius</h1>
+            <div class="question">
+                <h2>Dents centrales et latérales bien visibles, plaques ventromentales en position diagonale</h2>
+                <div class="choices">
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/nanocladius_rectinervis_preview.jpg" alt="Description de l'image 1">
+                        </div>
+                    </div>
+                    <div class="choice-container">
+                        <div class="choice">
+                            <img src="images/nanocladius_dichromus_parvulus.jpg" alt="Description de l'image 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="choice-content-wrapper">
+                    <div class="choice-content">
+                        <a id="choice-ligula" href="nanocladius_rectinervis.html">Griffes des parapodes antérieurs fortement dentelées, avec la dent interne la plus longue aussi longue que la dent apicale</a>
+                        <p>1er segment de l'antenne 1,35-1,6 fois la longueur combinée des autres segments</p>
+                    </div>
+                    <div class="choice-content">
+                        <a id="choice-mentum" href="nanocladius_dichromus_parvulus.html">Griffes des parapodes antérieurs faiblement dentelée ou lisse</a>
+                        <p>1er segment de l'antenne 1,7-2,35 fois plus long que la longueur combinée des autres segments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="scripts.js"></script>
+</body>
+</html>
